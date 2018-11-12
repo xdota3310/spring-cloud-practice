@@ -1,0 +1,38 @@
+## dev | prod | test
+
+#spring:
+#  profiles:
+#    active: @environment@
+
+server:
+  port: 6603
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: @pom.artifactId@
+
+
+zuul:
+#  ignored-headers: Access-Control-Allow-Credentials, Access-Control-Allow-Origin
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+
+#ribbon:
+#  ReadTimeout: 60000
+#  ConnectTimeout: 60000
+#  eureka:
+#    enabled: true
+#
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        timeout:
+#          enabled: true
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 250000
+#
