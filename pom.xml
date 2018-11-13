@@ -21,6 +21,8 @@
         <module>cloud-eureka</module>
         <module>cloud-config</module>
         <module>cloud-zuul</module>
+        <module>cloud-oauth2</module>
+        <module>cloud-admin</module>
     </modules>
 
     <properties>

@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    config:
+#     在spring boot 项目配置加载之前 先验证是否能从配置中心拿到配置
+      fail-fast: true
+      discovery:
+#       配置中心注册在eureka上的服务名
+        service-id: CLOUD-CONFIG
+        enabled: true
+#     该配置文件在git上的分支
+      label: master
+      profile: ${spring.profiles.active}
+
+#management:
+#  security:
+#    enabled: false
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:6601/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}

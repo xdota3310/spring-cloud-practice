@@ -1,0 +1,11 @@
+server:
+  port: 6605
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: @pom.artifactId@
+  datasource:
+    username: root
+    password:

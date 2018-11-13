@@ -1,0 +1,9 @@
+server:
+  port: 6604
+
+spring:
+  profiles:
+    active: dev
+  application:
+#  服务名称务必和git上配置文件名相对应
+    name: @pom.artifactId@
