@@ -5,7 +5,7 @@ spring:
       fail-fast: true
       discovery:
 #       配置中心注册在eureka上的服务名
-        service-id: CLOUD-CONFIGCENTER
+        service-id: CLOUD-CONFIG
         enabled: true
 #     该配置文件在git上的分支
       label: master

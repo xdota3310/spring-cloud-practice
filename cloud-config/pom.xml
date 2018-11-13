@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lr</groupId>
-    <artifactId>cloud-configcenter</artifactId>
+    <artifactId>cloud-config</artifactId>
     <packaging>jar</packaging>
 
-    <name>cloud-configcenter</name>
+    <name>cloud-config</name>
     <description>cloud config</description>
 
     <!--<parent>-->
