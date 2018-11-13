@@ -16,6 +16,9 @@ spring:
       preferredNetworks:
         - 192.168
 
+management:
+  security:
+    enabled: false
 
 
 eureka:

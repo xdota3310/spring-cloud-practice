@@ -5,19 +5,11 @@ spring:
   profiles:
     active: dev
   application:
-    name: @pom.artifactId@
+    name: cloud-configcenter
   rabbitmq:
-    host: paascloud-mq-rabbit
+    host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
-  boot:
-    admin:
-      username: admin
-      password: admin
 
-security:
-  user:
-    name: admin
-    password: admin
 
