@@ -1,22 +1,22 @@
-package com.lr.cloudadmin.model.DTO;
-
-import javax.validation.constraints.NotNull;
+package com.lr.cloudadmin.entity.DO;
 
 /**
- * 请填写类注释
+ * 用户基础类
  *
  * @author shijie.xu
  * @since 2018年11月14日
  */
-public class LoginDTO {
-    @NotNull
+public class UserDO {
+    private Long userId;
     private String userName;
-    @NotNull
     private String userPassword;
 
-    @Override
-    public String toString() {
-        return "LoginDTO{" + "userName='" + userName + '\'' + ", userPassword='" + userPassword + '\'' + '}';
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
     public String getUserName() {
@@ -33,5 +33,10 @@ public class LoginDTO {
 
     public void setUserPassword(String userPassword) {
         this.userPassword = userPassword;
+    }
+
+    @Override
+    public String toString() {
+        return "UserDO{" + "userId=" + userId + ", userName='" + userName + '\'' + ", userPassword='" + userPassword + '\'' + '}';
     }
 }

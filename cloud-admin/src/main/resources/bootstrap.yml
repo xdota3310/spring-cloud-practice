@@ -13,10 +13,17 @@ spring:
       password: admin
 
 mybatis:
-  configuration:
-    lazy-loading-enabled: true
-    aggressive-lazy-loading: false
-  mapper-locations: classpath*:mapper/*.xml
+#  configuration:
+#    lazy-loading-enabled: true
+#    aggressive-lazy-loading: false
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.lr.cloudadmin.entity.DO
+
+audience:
+  clientId: 098f6bcd4621d373cade4e832627b4f6
+  base64Secret: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=
+  name: restapiuser
+  expiresSecond: 172800
 
 eureka:
   client:

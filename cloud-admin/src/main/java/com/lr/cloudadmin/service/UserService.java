@@ -1,6 +1,6 @@
 package com.lr.cloudadmin.service;
 
-import com.lr.cloudadmin.model.DO.UserDO;
+import com.lr.cloudadmin.entity.DO.UserDO;
 
 import java.util.List;
 

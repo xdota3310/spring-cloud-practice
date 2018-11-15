@@ -1,7 +1,7 @@
 package com.lr.cloudadmin.service.impl;
 
 import com.lr.cloudadmin.dao.UserDao;
-import com.lr.cloudadmin.model.DO.UserDO;
+import com.lr.cloudadmin.entity.DO.UserDO;
 import com.lr.cloudadmin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

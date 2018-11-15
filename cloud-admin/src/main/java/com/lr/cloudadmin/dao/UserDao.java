@@ -1,6 +1,7 @@
 package com.lr.cloudadmin.dao;
 
-import com.lr.cloudadmin.model.DO.UserDO;
+import com.lr.cloudadmin.entity.DO.UserDO;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
