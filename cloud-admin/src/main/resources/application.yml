@@ -10,3 +10,11 @@ spring:
     url: jdbc:mysql://localhost:3306/cloud-admin
     username: root
     password:
+  redis:
+      host: 127.0.0.1
+      port: 6379
+      jedis:
+        pool:
+          max-active: 1024
+          max-wait: -1s
+          max-idle: 200
