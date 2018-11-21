@@ -1,4 +1,4 @@
-package com.lr.cloudadmin.common.utils;
+package com.cloudzuul.cloudzuul.Utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtBuilder;

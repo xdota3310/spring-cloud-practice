@@ -2,6 +2,7 @@ package com.cloudzuul.cloudzuul.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
+import io.jsonwebtoken.Claims;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,8 +44,10 @@ public class AccessFilter extends ZuulFilter {
             accessToken = request.getHeader("token");
         }
         if(accessToken == null||accessToken.equals("")){
-
+            return null;
         }
+        Claims usertoken =
+
         LOGGER.info("access is ok");
         return null;
     }
